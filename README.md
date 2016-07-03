@@ -19,10 +19,7 @@ Run following commands (estimated 10 hours)
 The shell script `setup.sh` will do the following
 * Install required python libraries using `pip`
 * Download the compressed [english wikipedia articles dump](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2)
-and put them into
-```
-data/enwiki-latest-pages-articles.xml.bz2
-```
+and put them into `data/enwiki-latest-pages-articles.xml.bz2`
 * Train the word2vec model using the `train.py` script.
 
 This can ofc. also just be done manually.
