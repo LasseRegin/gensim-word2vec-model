@@ -5,7 +5,7 @@ Example of how to learn vector presentation of words in python using `Gensim`
 on english wikipedia articles.
 
 # Requirements
-* Python 3.5
+* Python 3.5 + pip
 * Gensim 0.12.4
 
 # Setup
@@ -13,13 +13,11 @@ on english wikipedia articles.
 Run following commands (estimated 10 hours)
 
 ```
-# Install python packages
-pip install -r requirements.txt
-# Download wiki dump and train word2vec model
 ./setup.sh
 ```
 
 The shell script `setup.sh` will do the following
+* Install required python libraries using `pip`
 * Download the compressed [english wikipedia articles dump](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2)
 and put them into
 ```
