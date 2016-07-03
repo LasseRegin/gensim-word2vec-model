@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     if not os.path.isfile(DICTIONARY_FILEPATH):
         logging.info('Dictionary has not been created yet..')
-        logging.info('Creating dictionary (ETA: 9h)..')
+        logging.info('Creating dictionary (takes about 9h)..')
 
         # Construct corpus
         wiki = gensim.corpora.WikiCorpus(WIKI_DUMP_FILEPATH)
