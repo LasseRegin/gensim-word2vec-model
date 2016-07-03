@@ -12,8 +12,9 @@ if __name__ == '__main__':
     model = gensim.models.Word2Vec.load(os.path.join(MODEL_PATH, 'word2vec.model'), mmap='r')
 
     print('King - man + woman:')
+    print('')
     for word, sim in model.most_similar(positive=['woman', 'king'], negative=['man']):
-        print('\"%s\" - similarity: %g' % (word, sim))
+        print('\"%s\"\t- similarity: %g' % (word, sim))
     print('')
 
     print('Similarity between man and woman:')
