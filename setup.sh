@@ -10,3 +10,9 @@ mkdir $DATA_FOLDER
 # Download data
 echo "Downloading Wikipedia articles dump.."
 curl -sS $DATA_URL > "$DATA_FOLDER/enwiki-latest-pages-articles.xml.bz2"
+
+# Run python script from training the model
+python train.py
+
+# Evaluate the model
+python test.py
